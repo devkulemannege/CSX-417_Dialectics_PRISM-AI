@@ -1,0 +1,567 @@
+/* PRISM AI Home Page Styles - Inspired by provided UI reference */
+:root {
+  --yellow: #FADC07;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--white);
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited, a:active, a:hover {
+  text-decoration: none !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px 16px 60px;
+  background: var(--white);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.logo {
+  font-family: 'Necosmic', sans-serif;
+  font-size: 2.2rem;
+  color: var(--yellow);
+  letter-spacing: 2px;
+}
+.navbar nav a {
+  color: var(--black);
+  text-decoration: none !important;
+  margin: 0 18px;
+  font-weight: 600;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+}
+.navbar nav a.login-btn {
+  background: var(--yellow);
+  color: var(--black);
+  padding: 8px 24px;
+  border-radius: 8px;
+  margin-left: 18px;
+  font-weight: 700;
+}
+.navbar nav a:hover, .navbar nav a.login-btn:hover {
+  color: var(--yellow);
+  background: var(--black);
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 60px 40px 60px;
+  background: var(--yellow);
+  border-radius: 0 0 40px 40px;
+  min-height: 420px;
+}
+.hero-content {
+  max-width: 540px;
+}
+.hero-content h1 {
+  color: var(--black);
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.hero-content p {
+  color: var(--black);
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+}
+.cta-btn {
+  background: var(--white);
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 40px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.cta-btn:hover {
+  background: var(--black);
+  color: var(--yellow);
+}
+.hero-image img {
+  width: 420px;
+  max-width: 40vw;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px var(--black);
+}
+
+/* Popular Use Cases Section */
+.popular-section {
+    padding: 60px 0 40px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.popular-section h2 {
+    font-size: 2rem;
+    font-family: 'Poppins', 'Necosmic', sans-serif;
+    color: #000;
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+
+.popular-cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.popular-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 32px 24px 24px 24px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.popular-card:hover {
+    box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.popular-icon {
+    font-size: 3.2rem;
+    margin-bottom: 18px;
+    color: #fadc07;
+    background: #fffbe5;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.card-title {
+    font-size: 1.13rem;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.journey-section {
+  padding: 60px 0 40px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.journey-section h2 {
+  font-size: 2rem;
+  font-family: 'Poppins', 'Necosmic', sans-serif;
+  color: #000;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.journey-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* <-- Center the steps and line */
+  position: relative;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.journey-step {
+  display: flex;
+  align-items: center;   /* <-- Center step icon and content vertically */
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+.step-icon {
+  width: 48px;
+  height: 48px;
+  background: #fadc07;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  font-family: 'Poppins', 'Necosmic', sans-serif;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-right: 18px;
+  margin-left: 0;
+  flex-shrink: 0;
+}
+
+.step-content {
+  text-align: left;
+  padding-top: 12px;
+}
+
+.step-title {
+  font-size: 1.15rem;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.timeline-line {
+  width: 4px;
+  height: 48px;
+  background: #fadc07;
+  margin-left: 0;      /* <-- Remove offset for perfect centering */
+  z-index: 0;
+  border-radius: 2px;
+}
+
+.promo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 48px 0;
+  background: #fadc07; /* Brand Yellow */
+  margin-bottom: 0;    /* Remove any bottom margin */
+}
+.promo-image img {
+  width: 260px;
+  max-width: 30vw;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px var(--black);
+}
+.promo-content {
+  max-width: 420px;
+}
+.promo-content h2 {
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.promo-content p {
+  color: var(--black);
+  font-size: 1.08rem;
+  margin-bottom: 24px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0 16px 0;
+    margin-top: 0;       /* Remove any top margin */
+}
+
+/* What is PRISM AI Section */
+.what-is-section {
+    background: #fff;
+    padding: 60px 0 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.what-is-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 48px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 2px 32px rgba(0,0,0,0.06);
+    padding: 40px 32px;
+}
+
+.what-is-image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 32px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    background: #fadc07;
+    display: block;
+    margin: 0 auto;
+}
+
+.what-is-info h2 {
+    font-size: 2.3rem;
+    font-family: 'Poppins', 'Necosmic', sans-serif;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.what-is-info .subtitle {
+    color: #fadc07;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+.what-is-info p {
+    color: #222;
+    font-size: 1.09rem;
+    margin-bottom: 28px;
+    line-height: 1.7;
+}
+
+.what-is-info .cta-btn {
+    background: #fadc07;
+    color: #000;
+    font-weight: 700;
+    padding: 14px 38px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.08rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: background 0.2s;
+    border: none;
+    display: inline-block;
+}
+
+.what-is-info .cta-btn:hover {
+    background: #ffe96a;
+}
+
+/* Full_Name Marquee Section */
+.full-name-marquee {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.full-name-marquee .marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.full-name-marquee .marquee span.necosmic-yellow {
+    display: inline-block;
+    font-family: 'Necosmic', 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #fadc07;
+    font-weight: bold;
+    padding: 24px 0;
+    animation: marquee 16s linear infinite;
+    letter-spacing: 2px;
+}
+
+.full-name-marquee .marquee-rtl {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.full-name-marquee .marquee-rtl span.poppins-black {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    color: #000;
+    font-weight: bold;
+    padding: 18px 0 24px 0;
+    animation: marquee-rtl 16s linear infinite;
+    letter-spacing: 2px;
+}
+
+@keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee-rtl {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@media (max-width: 600px) {
+    .full-name-marquee .marquee span.necosmic-yellow {
+        font-size: 1.3rem;
+        padding: 14px 0;
+    }
+    .full-name-marquee .marquee-rtl span.poppins-black {
+        font-size: 1.1rem;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 900px) {
+  .navbar, .hero-section, .promo-section {
+    flex-direction: column;
+    padding: 24px 10vw;
+  }
+  .hero-image img, .promo-image img {
+    width: 90vw;
+    max-width: 90vw;
+  }
+  .popular-cards, .journey-steps {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .what-is-grid {
+        grid-template-columns: 1fr;
+        padding: 24px 10px;
+        gap: 28px;
+    }
+    .what-is-image img {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .what-is-section {
+        padding: 60px 20px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .what-is-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+  .journey-timeline {
+    max-width: 95vw;
+  }
+  .step-title {
+    font-size: 1rem;
+  }
+  .step-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    margin-right: 12px;
+  }
+  .timeline-line {
+    height: 36px;
+    margin-left: 0;
+  }
+}
+
+/* Vertical Zig-Zag Timeline */
+.journey-timeline-alt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  width: 100%;
+}
+
+.journey-step-alt {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  min-height: 120px;
+  position: relative;
+}
+
+.journey-step-alt.left .step-content {
+  grid-column: 1 / 2;
+  text-align: right;
+  justify-self: end;
+  margin-right: 0;
+}
+
+.journey-step-alt.right .step-content {
+  grid-column: 3 / 4;
+  text-align: left;
+  justify-self: start;
+  margin-left: 0;
+}
+
+.journey-step-alt .step-icon {
+  grid-column: 2 / 3;
+  width: 72px;
+  height: 72px;
+  background: #fadc07;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-family: 'Poppins', 'Necosmic', sans-serif;
+  font-weight: 700;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  z-index: 3;
+  margin: 0 32px;
+  justify-self: center;
+}
+
+.journey-step-alt .step-content {
+  background: #fff;
+  padding: 28px 48px;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.45rem;
+  color: #000;
+  font-weight: 600;
+  min-width: 260px;
+  max-width: 420px;
+  z-index: 2;
+  text-align: center; /* Center the text inside the container */
+}
+
+.timeline-line-alt {
+  width: 6px;
+  height: 64px;
+  background: #fadc07;
+  margin: 0 auto;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+@media (max-width: 1100px) {
+  .journey-timeline-alt {
+    max-width: 98vw;
+  }
+  .journey-step-alt .step-content {
+    font-size: 1.1rem;
+    min-width: 120px;
+    max-width: 90vw;
+    padding: 16px 10px;
+  }
+  .journey-step-alt .step-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+    margin: 0 12px;
+  }
+  .timeline-line-alt {
+    height: 36px;
+  }
+  .journey-step-alt {
+    min-height: 80px;
+  }
+}
+
+

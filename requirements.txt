@@ -1,0 +1,64 @@
+# Core web and API
+flask
+requests
+werkzeug
+python-dotenv
+fastapi
+uvicorn
+
+# Database
+mysql-connector-python
+mariadb
+
+#MCP model context protocols
+fastmcp
+
+# AI/LLM and LangChain
+langchain
+langchain-groq
+langchain-community
+langchain-core
+sentence-transformers
+faiss-cpu
+
+# Embeddings
+transformers
+
+#`Functionality
+ratelimit
+
+# Data
+pandas
+numpy
+scikit-learn
+matplotlib
+nltk
+
+# Utility
+python-dotenv
+datetime
+importlib-metadata; python_version<'3.8'
+
+# For Qdrant (if using cloud vector store)
+qdrant-client
+
+# For output parsing and validation (optional, for advanced LangChain usage)
+pydantic
+
+# For development and debugging (optional)
+pytest
+
+# If using HuggingFaceHub (optional, for some LangChain retrievers)
+huggingface-hub
+
+# If using OpenAI (optional, for some LangChain LLMs)
+openai
+
+# Web search and API
+# Tavily web search tool
+# (get your free API key at https://app.tavily.com/)
+tavily-python
+
+# For browser automation (optional, for future web browsing tools)
+# playwright
+# selenium
